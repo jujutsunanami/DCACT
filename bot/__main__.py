@@ -127,7 +127,6 @@ async def something():
                 rr = "encode"
                 bb = kk.replace(f".{aa}", " Encoded By @OngoingAnimess.mkv")
                 out = f"{rr}/{bb}"
-                thum = "thumb.jpg"
                 dtime = ts(int((es - s).seconds) * 1000)
                 hehe = f"{out};{dl};{list(QUEUE.keys())[0]}"
                 wah = code(hehe)
@@ -146,7 +145,7 @@ async def something():
                 er = stderr.decode()
                 try:
                     if er:
-                        await e.edit(str(er) + "\n\n**ERROR** Contact @OngoingAnimess")
+                        await e.edit(str(er) + "\n\n**ERROR** Contact")
                         QUEUE.pop(list(QUEUE.keys())[0])
                         os.remove(dl)
                         os.remove(out)
@@ -167,7 +166,7 @@ async def something():
                         ),
                     )
                 ds = await e.client.send_file(
-                    e.chat_id, file=ok, force_document=True, thumb=thum
+                    e.chat_id, file=ok, force_document=True
                 )
                 await nnn.delete()
                 org = int(Path(dl).stat().st_size)
