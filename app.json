@@ -1,10 +1,5 @@
 {
-    "name": "Encoder Queue bot",
-    "description": "A Normal Telegram Bot Which can Encode And Generate Samples of videos.",
-    "logo": "https://telegra.ph/file/aaee0031fbf0bd9df0352.png",
-    "keywords": ["Telegram","python", "Video","Compressor","Encoder"],
-    "repository": "",
-    "success_url": "",
+    "name": "uu",
     "stack": "container",
     "env": {
         "APP_ID": {
